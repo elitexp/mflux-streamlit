@@ -53,7 +53,7 @@ mflux-streamlit
 # dev workaround: run the main.py
 uv venv && source .venv/bin/activate
 uv pip install -e .
-streamlit src/app.py
+streamlit run src/app.py
 ```
 
 ## License

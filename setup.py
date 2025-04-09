@@ -23,7 +23,7 @@ setup(
     ),
     keywords='streamlit, mflux, mlx',
     install_requires=[
-        "mflux>=0.4.1,<1.0",
+        "mflux==0.4.1",
         "streamlit>=1.10.0,<2.0",
     ],
     zip_safe=False
