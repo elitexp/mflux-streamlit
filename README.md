@@ -15,9 +15,17 @@ A web app gui for [mflux](https://pypi.org/project/mflux/) python library implem
 
 ## Features
 
-- Image generation usig mflux along with ControlNet Support
-- Multiple LoRAs and scales for each LoRA adapter
-- ControlNet integration for enhanced control
+- Multiple MFLUX model families from a single UI, each with its own variants and controls:
+  - **FLUX.1** (Schnell / Dev / Krea-Dev) — txt2img, img2img, Kontext editing, ControlNet (Canny)
+  - **FLUX.2** (Klein 4B/9B, distilled & base) — fast txt2img and image editing
+  - **Z-Image** (Turbo / base) — fast, small, high realism
+  - **FIBO** (FIBO / FIBO-lite / FIBO-Edit) — natural-language or JSON prompts, editing
+  - **Qwen-Image** (txt2img / edit) — strong prompt understanding and world knowledge
+  - **SeedVR2** (3B / 7B) — image upscaling by target resolution or scale factor
+  - **Depth Pro** — fast, accurate depth-map estimation
+- Multiple LoRAs and scales for each LoRA adapter (where supported)
+- Optional reference / source image for img2img, editing, ControlNet, upscaling and depth
+- Per-variant quantization (4-bit / 8-bit), guidance, steps and negative-prompt controls
 
 ## Previews
 | ![Left: FLUX.1](images/flux.png) | ![Right: FLUX.1 with LoRA](images/flux-lora.png) |
@@ -33,7 +41,6 @@ A web app gui for [mflux](https://pypi.org/project/mflux/) python library implem
 ### Todo List
 
 - Beautify the web UI and improve UX
-- support `mflux`'s existing Image-to-Image modes
 
 ## Installation
 
