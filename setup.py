@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 long_description = 'A Streamlit WebUI application for the mflux project.'
 setup(
     name='mflux-streamlit',
-    version='0.0.1',
+    version='0.0.2',
     author='Sujip Maharjan',
     author_email='elitexp2008@gmail.com',
     url='https://github.com/elitexp/mflux-streamlit',
